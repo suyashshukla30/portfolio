@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html >
     <title>Suyash Shukla</title>
-<link rel="stylesheet" href="style1.css">
-<link rel="stylesheet" href="nav.css">
+
 
 <body >
     
-    <h2 class="mainhead">
+    <h2>
         <center>
-           <u style="font-family:Georgia, 'Times New Roman', Times, serif;font-size: 25px;"> PORTFOLIO</u>
+           <u style="font-family:Georgia, 'Times New Roman', Times, serif;font-size: 25px;color: rgb(54, 54, 54);"> PORTFOLIO</u>
         </center>
+        <img src="https://cdn.pixabay.com/photo/2021/09/20/21/32/lake-6641880_1280.jpg"
+        alt="IMG"
+        width="37px";
+        height="40px";
+        align="right";
+      > 
 
-
+     <span style="font-size:25px;cursor:pointer;color: rgb(124, 115, 247);text-align: right;"
     
-    
-   
-
-    
-      <style>
-          .mainhead{
-    color:rgb(61, 60, 60);
-    font-family: monospace;
-    font-size:30px;
-}
-      </style>
+     onclick ="openNav()">☰
+     <hr
+style="height:3px";
+color= "black";
+/>
+    </span>
+      
     </h2>
-    <hr
-    style="height:3px";
-    color= "black";
-    />
 <br></br>
 <style>
     img{
@@ -36,8 +33,69 @@
         border-radius: 50%;
     }
 </style>
+<style>
+    body{
+    font-family:"Lato", monospace;
 
+}
+.sidenav{
+    height:0;
+    width: 0;
+    position:fixed;
+    
+    top: 0;
+    left: 0;
+    background-color:rgb(253, 126, 76);
+    overflow-x: hidden;
+    transition:0.5s;
+    padding-top: 50px;
+}
+.sidenav a{
+    padding:10px;
+    text-decoration:rgb(215, 226, 225);
+    font-family:monospace;
+    font: size 20px;
+    color:rgb(66, 66, 66);
+    display:block;
+    transition:0.5s;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color:rgb(233, 214, 214);
+}
+.sidenav .closebtn{
+    position:absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and(max-height:450px){
+    .sidenav{padding-top:15px;}
+    .sidenav a{font-size:18px;}
+    
+}
+</style>
+    <div id="mySidenav" class ="sidenav">
+        <a href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNav()">&times;</a>
+        <a href="#"><center>Home</center></a>
+        <a href="mailto:shuklasuyash52@gmail.com"><center>Contact</center></a>
+    </div>
+   
 
+    <script>
+        function openNav(){
+            document.getElementById("mySidenav").style.width="250px";
+            document.getElementById("mySidenav").style.height="103px";
+
+        }
+        function closeNav(){
+            document.getElementById("mySidenav").style.width="0";
+            document.getElementById("mySidenav").style.height="0";
+        }
+    </script>
+    
 
 </body>
 <body style="background-image: linear-gradient(to right,rgb(211, 211, 211), rgb(228, 228, 161))";
@@ -52,9 +110,9 @@
     <div style="float: right; width:29.5%;height: 100vh; background-color: rgb(230, 225, 225);"class ="part2">
         <h1 style="color: rgb(0, 0, 0);"><center>Skills</center></h1>
         <ul style="color: rgb(82, 172, 202);">
-            <li>Java  &nbsp &nbsp&nbsp&nbsp&nbsp⭐⭐⭐⭐</li>
-            <li>Python &nbsp&nbsp⭐⭐⭐</li>
-            <li>C &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  ⭐⭐</li>
+            <li>Java  &nbsp &nbsp⭐⭐⭐⭐</li>
+            <li>Python &nbsp⭐⭐⭐</li>
+            <li>C &nbsp&nbsp&nbsp&nbsp&nbsp  ⭐⭐</li>
         </ul>
     </div>
     <style>
