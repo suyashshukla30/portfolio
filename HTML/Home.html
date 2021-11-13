@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html >
+    <title>Suyash Shukla</title>
 <link rel="stylesheet" href="/CSS/style1.css">
 <link rel="stylesheet" href="/CSS/nav.css">
 
-<body style="background-color:rgb(226, 226, 225)">
+<body >
     
     <h2>
         <center>
@@ -21,11 +22,12 @@
      onclick ="openNav()">☰
      <hr
 style="height:3px";
-color= "black";/>
+color= "black";
+/>
     </span>
       
     </h2>
-
+<br></br>
 <style>
     img{
        
@@ -37,32 +39,62 @@ color= "black";/>
         <a href="javascript:void(0)"
         class="closebtn"
         onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="mailto:shuklasuyash52@gmail.com">Contact</a>
+        <a href="#"><center>Home</center></a>
+        <a href="mailto:shuklasuyash52@gmail.com"><center>Contact</center></a>
     </div>
    
 
     <script>
         function openNav(){
             document.getElementById("mySidenav").style.width="250px";
+            document.getElementById("mySidenav").style.height="110px";
 
         }
         function closeNav(){
             document.getElementById("mySidenav").style.width="0";
+            document.getElementById("mySidenav").style.height="110px"
         }
     </script>
     
-    
+
 </body>
-<body >
-    <div class="ani">
-        <p style="background-color: rgb(107, 107, 248);color: whitesmoke;">
-        Hi I completed.</p>
-        
+<body style="background-image: linear-gradient(to right,rgb(211, 211, 211), rgb(228, 228, 161))";
+  
+>
+    <div style="float: left; width:70%;height: 100vh; background-color: rgb(42, 43, 43);padding:0%" class="fade-in">
+        <h1 style="color:whitesmoke" ><center>Education<center></h1>
+            <p style="color: lightblue;">
+            St. Franci's College</p>
     </div>
-    <div>
-        <p style="background-color: rgb(107, 107, 248);color: whitesmoke;">
-        Not completed</p>
+    
+    <div style="float: right; width:29.5%;height: 100vh; background-color: rgb(230, 225, 225);"class ="part2">
+        <h1 style="color: rgb(0, 0, 0);"><center>Skills</center></h1>
+        <ul style="color: rgb(82, 172, 202);">
+            <li>Java  &nbsp &nbsp⭐⭐⭐⭐</li>
+            <li>Python &nbsp⭐⭐⭐</li>
+            <li>C &nbsp&nbsp&nbsp&nbsp&nbsp  ⭐⭐</li>
+        </ul>
     </div>
+    <style>
+        .fade-in {
+            animation: fadeInAnimation ease 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        .part2
+        {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </body>
 </html>
